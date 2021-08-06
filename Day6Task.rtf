@@ -1,0 +1,516 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.14393}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs22\lang9 1) Find the culprit\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script>\par
+ alert( \ldblquote I\rquote m JavaScript!\rquote );\par
+ </script>\par
+ Whats the error in this ?\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\b0\par
+    <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script\par
+ alert( \ldblquote 'I\rquote m JavaScript!")>\par
+ </script>\par
+ </body>\par
+</html>\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 2)  Find the culprit and invoke the alert\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+scripts.js\par
+alert(\ldblquote I\rquote m invoked!\rdblquote );\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0          <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src =("I am invoked!"></script>\par
+</body>\par
+</html>\par
+
+\pard\ri-1530\sa200\sl276\slmult1 -------------------------------------------------------------------------------------------------------------------\par
+\b 3)  Explain the below how it works\par
+explain.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+script.js\par
+alert("I'm JavaScript!");\par
+alert('Hello') // this line is not having semicolon\par
+alert(`Wor\par
+ ld`)\par
+alert(3 +\par
+1\par
++ 2); // this is multiple line code and its working\b0\par
+
+\pard\sa200\sl276\slmult1\ul\i solution:-\par
+\ulnone\b\i0 code//-\par
+
+\pard\ri-1530\sa200\sl276\slmult1\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=(I am javascript!"></script>\par
+<script src=("Hello")\par
+<alert  "world"<b>\par
+"3+1+2"></alert>\par
+</script>\par
+</body>\par
+</html>\par
+
+\pard\sa200\sl276\slmult1 -------------------------------------------------------------------------------------------------------------------\par
+\b 4)  Fix the below to alert Guvi geek\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\ul\b0\i\par
+solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let admin=9, fname=10.5; \par
+fname = "Guvi";\par
+lname = "geek"\par
+admin = fname+lname;\par
+alert( admin \rdblquote ></script>\par
+</body>\par
+</html>\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 5)  Fix the below to alert hello Guvi geek\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+  \b0         <!DOCTYPE html>\par
+        <html>\par
+         <body>\par
+           <script src=var fname=10.5; \par
+fname = "Guvi";\par
+lname = "geek"\par
+let name = fname+lname;\par
+alert( name)></script>\par
+          </body>\par
+          </html>\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 6)  Fix the below to alert sum of two numbers\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let a = 2;\par
+let b = 3;\par
+alert(a + b);\rdblquote ></script>\par
+</body>\par
+</html>\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 7)  Fix the below to alert sum of two numbers\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let a = 5;\par
+let b = 5;\par
+alert(a + b);\rdblquote ></script>\par
+</body>\par
+</html>\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 8)  If you run the below scritpt you will get \ldblquote Code is Blasted\rdblquote\par
+Explain Why the Code is blasted and how to diffuse it and get \ldblquote Diffused\rdblquote .\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote\par
+var a = 2> 12;\par
+\par
+if (a) \{\par
+  console.log("Code is Blasted")\par
+\}\par
+else\par
+\{\par
+  console.log("Diffused") \par
+\}\rdblquote ></script>\par
+</body>\par
+</html>\par
+\b -------------------------------------------------------------------------------------------------------------------\par
+9)  How to get the success in console.\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let a = prompt("23");\par
+if (a) \{\par
+ console.log( 'OMG it works for any number inc 0' );\par
+\}\par
+else\par
+\{\par
+ console.log( "Success" );\rdblquote ></script>\par
+</body>\par
+</html>\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 10)  How to get the correct score in console.\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\i0 code//-\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let value = prompt("6");\par
+if (value === 4) \{\par
+      console.log("You hit a Four");\par
+\} else if (value === 6) \{\par
+      console.log("You hit a Six");\par
+\} else \{\par
+      console.log("I couldn't figure out");\par
+\}\rdblquote ></script>\par
+</body>\par
+</html>\par
+\b -------------------------------------------------------------------------------------------------------------------\par
+11)  Fix the code to welcome the Employee\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\b0\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let login = 'Employee';\par
+let message = (login == 'Employee') \par
+  '';\par
+console.log(Wlcome+(message)+!!);\rdblquote ></script>\par
+</body>\par
+</html>\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 12)  Fix the code to welcome the boss\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let message;\par
+if (null || 2 || undefined )\par
+\{\par
+ let message = "welcome boss";\par
+\}\par
+else\par
+\{\par
+ let message = "Go away";\par
+\}\par
+  console.log(message);\rdblquote ></script>\par
+</body>\par
+</html>\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 13)  Fix the code to welcome the boss\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let message;\par
+let lock = 2; \par
+if (null || lock || undefined )\par
+\{\par
+  message = "welcome;\par
+\}\par
+else\par
+\{\par
+ message = "Go away";\par
+\}\par
+  console.log(message);\rdblquote ></script>\par
+</body>\par
+</html>\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 14) Fix the code to welcome the boss\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let message;\par
+let lock =\{ 2\};\par
+\par
+if (lock && " " || undefined )\par
+\{\par
+  message = "Go away";\par
+\}\par
+else\par
+\{\par
+ message = "welcome";\par
+\}\par
+console.log(message);\rdblquote ></script>\par
+</body>\par
+</html>\par
+\b -------------------------------------------------------------------------------------------------------------------\par
+15)  Change the code to print\par
+3\par
+2\par
+1\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let i = 3;\par
+while (i) \{\par
+  console.log( i );\par
+\}\rdblquote ></script>\par
+</body>\par
+</html>\par
+\b -------------------------------------------------------------------------------------------------------------------\par
+16)  Change the code to print 1 to 10 in 4 lines\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote  var a=1,2,3,\par
+var b = 4,5,6\par
+var c= 7,8,19\par
+var d = 10\par
+console.log(a)\par
+console.log(b);\par
+console.log(c);\par
+console.log(d);"></script>\par
+</body>\par
+</html>\par
+\b -------------------------------------------------------------------------------------------------------------------\par
+17) Change the code to print even numbers\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote for(var i=1;i<=20;i++)\par
+\{\par
+if(i%2==0)\par
+\{\par
+console.log(i);\par
+\}\par
+\}\rdblquote ></script>\par
+</body>\par
+</html>\par
+\b -------------------------------------------------------------------------------------------------------------------\par
+18)Change the code to print all the gifts\par
+fix.html\par
+<!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote script.js\rdblquote ></script>\par
+</body>\par
+</html>\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+<body>\par
+ <script src=\rdblquote let gifts = ["teddy bear", "drone", "doll"];\par
+for (let i = 0; i < 3; i++) \{\par
+  console.log('console.log(gifts) + "bow!");\par
+\}\rdblquote ></script>\par
+</body>\par
+</html>\par
+\b -------------------------------------------------------------------------------------------------------------------\par
+____________________________________________________________________________________________________________________________________________________________________\par
+\fs40 Q.2)  GUVI: Zen Class \f1\emdash  Part 2 : Find the culprits and nail them \emdash  debugging javascript loops\par
+\f0\fs22\lang1033 1)\f1\lang9 Write a code to print the numbers in the array\par
+Output: 1234567891011\par
+\ul\b0\i\f0\lang1033 solution:-\par
+\ulnone\b\i0\lang9 code//-\b0 :\b\par
+\b0 for(var i=0;i<11;i++)\par
+\{\par
+console.log(i);\par
+\}\par
+\b 2)  Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)\par
+Output: 11 10 9 8 7 6 5 4 3 2 1\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 var nums=1110987654321\par
+for(var i=11;i<0:i--)\par
+\{\par
+nums+" ";\par
+\}\par
+console.log(nums);\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 3)  Write a code to replace the array value \f1\emdash  If the number is even, replace it with \lquote even\rquote .\par
+Output:[ 1, \ldblquote even\rdblquote , 3, \ldblquote even\rdblquote , 5, \ldblquote even\rdblquote , 7, \ldblquote even\rdblquote , 9, \ldblquote even\rdblquote , \'85 ]\par
+\ul\b0\i\f0\lang1033 solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 var nums = [1,2,3,4,5,6,7,8,9,10,11];\par
+for( var i=1;i<11;i++)\par
+\{\par
+if(i%2==0)\par
+\{\par
+num="even"+nums;\par
+\}\par
+console.log(num);\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b\lang9 4)  Write a code to replace the array value \f1\emdash  If the index is even, replace it with \lquote even\rquote .\f0\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0\lang1033 var nums = [1,2,3,4,5,6,7,8,9,10,11];\par
+for( var i=1;i<11;i++)\par
+\{\par
+if(i%2==0)\par
+\{\par
+num="even"+nums;\par
+\}\par
+console.log(num);\par
+\lang9 -------------------------------------------------------------------------------------------------------------------\par
+\b 5) Write a code to add all the numbers in the array\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 var num=[1,2,3,4,5,6,7,8,9,10,11]\par
+for(var i=0;i<11,i++)\par
+\{\par
+console.log(+parseInt(i));\par
+\}\par
+-------------------------------------------------------------------------------------------------------------------\par
+\b 6) Write a code to add the even numbers only\par
+\ul\b0\i solution:-\par
+\ulnone\b\i0 code//-\par
+\b0 var num=[1,2,3,4,5,6,7,8,9,10,11]\par
+for(var i=0;i<11;i++)\par
+\{\par
+if(i%2==0)\par
+\{\par
+num=+parsent(i)\par
+\}\par
+\}\par
+console.log(num);\par
+\b\fs40\par
+\fs22\par
+\par
+\par
+\par
+\b0\par
+\b\par
+\b0\par
+\b\par
+   \par
+\b0\par
+\b\par
+\par
+\b0\par
+\par
+\b\par
+\b0\par
+\b\par
+\b0  \par
+\b\par
+\ul\b0\i\par
+\ulnone\b\i0\par
+\b0\par
+\par
+\par
+\b\par
+}
+ 
